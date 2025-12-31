@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather & City Info App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Weather & City Info</h1>
+    <p>Real-time weather, map location, news, and currency rates</p>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <label for="cityInput">Enter city name:</label>
+      <div class="search-row">
+        <input type="text" id="cityInput" placeholder="e.g., Almaty" />
+        <button id="searchBtn">Search</button>
+      </div>
+      <p class="hint">Example: Almaty, Astana, London, New York...</p>
+      <p id="errorMessage" class="error"></p>
+    </section>
+
+    <section class="grid">
+      <section class="card" id="weatherCard">
+        <h2>Weather</h2>
+        <div id="weatherContent" class="card-body">
+          <p class="placeholder">Enter a city to see the weather.</p>
+        </div>
+      </section>
+
+      <section class="card" id="mapCard">
+        <h2>Location Map</h2>
+        <div id="map" class="map-container">
+          <!-- Map iframe will be inserted here -->
+        </div>
+      </section>
+
+      <section class="card" id="newsCard">
+        <h2>Local News</h2>
+        <div id="newsContent" class="card-body">
+          <p class="placeholder">News related to the selected city will appear here.</p>
+        </div>
+      </section>
+
+      <section class="card" id="currencyCard">
+        <h2>Currency Info</h2>
+        <div id="currencyContent" class="card-body">
+          <p class="placeholder">Currency conversion details will appear here.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Assignment 2 — API Integration • Server on port 3000</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
